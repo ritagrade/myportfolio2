@@ -1,0 +1,40 @@
+
+/*----------------------- Mobile --------------------------*/
+
+.contact {
+  padding: var(--gutter-small);
+  margin-bottom: var(--gutter-xlarge);
+}
+  
+.col-lg-8,
+.col-lg-8 h3,
+.col-lg-4 h3 {
+  margin-bottom: var(--gutter-regular);
+}
+
+.btn {
+  margin-top: var(--gutter-small);
+}
+
+
+/*----------------------- Min 768px --------------------------*/
+
+
+@include grid-media(tablet) {
+
+  .contactrow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+  
+  .col-lg-8 {
+    grid-column: 1;
+  }
+  
+  .col-lg-4 {
+    grid-column: 3;
+  }
+}
+
+
+/*----------------------- Min 1440px --------------------------*/

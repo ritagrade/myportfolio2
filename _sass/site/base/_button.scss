@@ -1,0 +1,27 @@
+button {
+    @include element-padding;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: var(--font-size-button);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5rem;
+    transition:
+      color $timing-interaction,
+      background $timing-interaction;
+  
+    &:focus {
+      outline:0;
+    }
+  
+    &:active {
+      transform: scale(0.99);
+    }
+  
+    &.disabled{
+      cursor: not-allowed;
+      transform: scale(1);
+    }
+  }

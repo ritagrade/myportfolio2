@@ -1,0 +1,127 @@
+---
+layout: default
+title: About
+permalink: /about/
+
+
+intro: |
+  Hi, I'm aRita Grade :)
+  
+  My career as a Digital Designer began in 2014. In my journey I've
+  always been in digital agencies. I have worked on advertising and
+  user interface design, especially in the creative construction of
+  websites, mobile applications and digital communication for various
+  brands. Now I'm in the transition process to be a Product Designer.
+
+  I am experienced in large projects. From dealing with
+  international brands in portuguese agencies, I have the skills to
+  be part of the different phases within a project - from concept to
+  implementation.
+
+profile_picture: /images/profile-pictures/profile.jpg
+
+experience:
+  - company: Wunderman Thompson Lisbon
+    position: Digital Creative Lead & UI Designer
+    period: Jun 2021 - Present
+
+  - company: VMLY&R Lisbon
+    position: Digital Creative Supervisor & UI Designer
+    period: Jul 2019 - May 2021
+
+  - company: excentricGrey Lisbon
+    position: Digital & UI Designer
+    period: Jun 2014 - Jun 2019
+
+
+education:
+  - course: Digital Experience Design
+    place: Faculty of fine arts · University of Lisbon
+    period: 2021-2022
+
+  - course: Master Communication Design
+    place: Lisbon School of Architecture · University of Lisbon
+    period: 2010-2013
+
+  - course: BA Design
+    place: IADE
+    period: 2007-2010
+
+skills:
+  - User Experience design (UX)
+  - User Interface design (UI)
+  - Graphic design
+  - Design libraries and Styleguides
+  - User journey mapping
+  - User interviews and Usability testing
+  - Information Architecture
+  - Wireframing
+  - Interactive prototypes
+
+tools:
+  - Figma
+  - Adobe Creative Cloud (Photoshop, XD, Illustrator, After Effects...)
+  - Jekyll
+---
+
+
+
+<div class="about">
+  <div class="about-intro-image">
+    <img src="{{ page.profile_picture }}" alt="Blank and white portrait of Rita Grade">
+  </div>
+
+  <div class="about-intro-description paragraph-normal">
+    {{ page.intro | markdownify }}
+  </div>
+
+  <div class="about-experience about-attribute">
+    <div class="about-section">
+      <h3 class="about-section-title type-level-2">Experience</h3>
+      <dl class="relational-list">
+        {% for experience-item in page.experience %}
+          <dt class="relational-list__title">{{ experience-item.company | markdownify}}</dt>
+          <dd class="relational-list__description relational-list__description--period">{{ experience-item.period | markdownify}}</dd>
+          <dd class="relational-list__description">{{ experience-item.position | markdownify}}</dd>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+
+  <div class="about-education about-attribute">
+    <div class="about-section">
+      <h3 class="about-section-title type-level-2">Education</h3>
+      <dl class="relational-list">
+        {% for education-item in page.education %}
+          <dt class="relational-list__title">{{ education-item.course | markdownify}}</dt>
+          <dd class="relational-list__description">{{ education-item.place | markdownify}}</dd>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+
+  <div class="about-tools about-attribute">
+    <div class="about-section">
+      <h3 class="about-section-title type-level-2">Tools</h3>
+      <ul class="list--dashed list--small">
+        {% for tool in page.tools %}
+          <li>{{ tool | markdownify }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="about-skills about-attribute">
+    <div class="about-section">
+      <h3 class="about-section-title type-level-2">Skills</h3>
+      <ul class="list--dashed">
+        {% for skill in page.skills %}
+          <li><p>{{ skill }}</p></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+

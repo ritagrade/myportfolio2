@@ -1,0 +1,45 @@
+title: Your awesome title
+description: "Portfolio of product designer Rita Grade"
+
+baseurl: ""
+url: ""
+
+permalink: ESCREVER
+
+github_username:  ritagrade
+email: aritagrade@gmail.com
+tel: +351 910 000 000
+address: Lisbon, Portugal
+timezone: Europe/Lisbon
+year: 2021
+sitemap: true
+
+social-username:
+  linkedin: "argdesinger"
+  github: "ritagrade"
+  behance: "argdesinger"
+  dribbble: "argdesinger"
+
+permalink: /:title/
+
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  fonts:
+    output: true
+    permalink: /fonts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "font"

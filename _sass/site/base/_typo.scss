@@ -1,0 +1,61 @@
+h1 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-large);
+}
+
+h2 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-small);
+}
+
+h3 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-small);
+  background: var(--color-gradient);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-xsmall);
+}
+
+p, label, span {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xsmall);
+  line-height: var(--line-height-tight);
+}
+
+span {
+  opacity: 0.0;
+}
+
+figcaption {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xsmall);
+}
+
+
+.brand {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-large);
+}
+
+.small {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-small);
+}
+
+.nav-nav a {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xsmall);
+}
+
+.logo {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-large);
+}
+  

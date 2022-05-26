@@ -1,0 +1,20 @@
+  @mixin grid-media($device-size: mobile) {
+  $tablet-size: 768px;
+  $desktop-size: 1440px;
+  $default-feature: min-width;
+
+  @if $device-size == cat {
+  } @else if $device-size == mobile {
+    @media only screen and (#{$default-feature}: #{$mobile-size}) {
+      @content;
+    }
+  } @else if $device-size == tablet {
+    @media only screen and (#{$default-feature}: #{$tablet-size}) {
+      @content;
+    }
+  } @else if $device-size == desktop {
+    @media only screen and (#{$default-feature}: #{$desktop-size}) {
+      @content;
+    }
+  }
+}

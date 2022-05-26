@@ -1,0 +1,113 @@
+/*----------------------- The Root --------------------------*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+/*----------------------- CSS for HTML elements --------------------------*/
+
+
+article {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 8fr 4fr;
+  align-items: center;
+}
+
+
+
+
+#article-image {
+  width: 25rem;
+  height: 25rem;
+}
+
+
+
+
+/*----------------------- Responsive Images --------------------------*/
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+#article-image img {
+  width: auto;
+  max-height: 100%;
+}
+
+
+/*----------------------- Customizing Links --------------------------*/
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--color-light);
+}
+
+a:active {
+  background-image: linear-gradient(0deg,rgba(244,208,111,0.5) 50%,transparent 50%);
+}
+
+.current {
+  background-image: linear-gradient(0deg,rgba(244,208,111,0.5) 50%,transparent 50%);
+}
+
+main a:link {
+  text-decoration: none;
+}
+
+.tagline a:link {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+.tagline a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+
+#icon {
+  font-size: var(--font-size-xsmall);
+  color: var(--color-light);
+}
+
+/*----------------------- Responsive typography via media queries. --------------------------*/
+
+
+
+.404 {
+  margin-top: 30vh auto;
+  text-align: center;
+
+  h3 {
+    font-size: var(--font-size-404);
+  }
+}

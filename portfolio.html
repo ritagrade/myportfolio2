@@ -1,0 +1,40 @@
+---
+layout: default
+title: 'Portfolio'
+---
+
+
+    
+<div class="projects">
+
+    <div class="projects-intro-wrapper">
+
+        <h3 class="projects-intro type-level-3">
+            <a href="/contact">Get in touch</a> if you'd like to see some of my latest work.
+        </h3>
+
+    </div>
+
+    {% for project in site.projects reversed limit:include.limit %}
+
+    <article class="project-listing">
+
+        <div class="thumbnail-wrapper">
+            <a href="{{ project.url | prepend: site.baseurl }}">
+                <div class="thumbnail-description-wrapper">
+                    <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
+                    <p class="thumbnail-description">
+                        <span>{{ project.description }}</span>
+                    </p>
+                </div>
+                <h4 aria-hidden="true">{{ project.title }}</h4>
+            </a>
+        </div>
+
+    </article>
+
+    {% else %}
+        <article>There are no items!</article>
+    {% endfor %}
+
+</div>

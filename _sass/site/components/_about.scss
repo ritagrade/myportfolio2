@@ -1,0 +1,115 @@
+
+/*----------------------- Mobile --------------------------*/
+
+
+
+
+.about {
+  display: grid;
+  padding: var(--gutter-small);
+  margin-bottom: var(--gutter-xlarge);
+  grid-row-gap: var(--gutter-regular);
+
+  .about-intro-description {
+    margin-bottom: var(--gutter-regular);
+
+    p {
+      margin-bottom: var(--gutter-regular);
+    }
+
+    p:first-child {
+      font-family: var(--font-family-secondary);
+      font-size: var(--font-size-normal);
+      background: var(--color-gradient);
+      background-size: 400% 400%;
+      animation: gradient 30s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .about-attributes {
+    grid-row: 3;
+  
+    .about-site {
+      grid-row: 4;
+    }
+    
+    dt p {
+      font-size: var(--font-size-normal);
+    }
+
+    .list--dashed {
+
+      li {
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-regular);
+      }
+    }
+  }
+}
+
+  
+
+.about {
+  .about-section-title {
+    padding-bottom: var(--gutter-xsmall);
+    margin-bottom: var(--gutter-xsmall);
+  }
+}
+
+  
+
+
+/*----------------------- Min 768px --------------------------*/
+
+@include grid-media(tablet) {
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr var(--gutter-regular) 1fr;
+    padding: var(--gutter-regular);
+    margin-bottom: var(--gutter-xlarge);
+
+    .about-intro-image {
+      margin-bottom: 0;
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    .about-intro-description {
+      margin-top: 40vh;
+      margin-bottom: 0;
+      grid-row: 1;
+      grid-column: 1;
+    }
+    
+    .about-experience {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .about-education {
+      margin-top: 40vh;
+      grid-column: 1;
+      grid-row: 2;
+      text-align: right;
+    }
+
+    .about-skills {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    .about-tools {
+      margin-top: 40vh;
+      grid-column: 1;
+      grid-row: 3;
+      text-align: right;
+    }
+  }
+}
+
+/*----------------------- Min 1440px --------------------------*/
