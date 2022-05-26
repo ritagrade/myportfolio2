@@ -5,7 +5,7 @@
         <div class="logo">
             {% for item in site.data.header %}
             <h1>
-                <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+                <a href="/myportfolio2{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
             </h1>
             {% endfor %}
         </div>

@@ -5,9 +5,10 @@
     <title>{% if page.title_override %}{{ page.title_override | escape }}{% elsif page.title %}{{ page.title | escape }} | {{site.title | escape}}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto|Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4729109274.js" crossorigin="anonymous"></script>
+    
     {% feed_meta %}
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
