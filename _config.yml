@@ -20,9 +20,7 @@ social-username:
 
 permalink: /:title/
 
-image_serve_path: "/myportfolio2/assets/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
-
-image_profile: "/myportfolio2/assets/images"
+image_serve_path: "/{{ site.baseurl }}/assets/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 collections:
   projects:
@@ -43,3 +41,7 @@ defaults:
       type: "fonts"
     values:
       layout: "font"
+
+sass:
+    sass_dir: _sass
+    style: :compressed

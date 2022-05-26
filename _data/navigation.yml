@@ -1,9 +1,9 @@
 
 - name: about
-  link: /myportfolio2/about/
+  link: /about/
 - name: portfolio
-  link: /myportfolio2/portfolio/
+  link: /portfolio/
 - name: contact
-  link: /myportfolio2/contact/
+  link: /contact/
 
   
