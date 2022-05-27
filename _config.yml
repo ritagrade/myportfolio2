@@ -20,7 +20,7 @@ social-username:
 
 permalink: /:title/
 
-image_serve_path: "/{{ site.baseurl }}/assets/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+image_serve_path: "/assets/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 collections:
   projects:
@@ -45,3 +45,14 @@ defaults:
 sass:
     sass_dir: _sass
     style: :compressed
+
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
