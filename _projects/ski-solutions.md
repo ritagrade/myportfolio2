@@ -11,9 +11,6 @@ client: Ski Solutions
 time_period: 2017
 thumbnail: "/projects/ski-solutions/plist-ski-solutions.jpg"
 
-website:
-  button_text: Visit the site
-  url: https://www.skisolutions.com
 
 intro: |
   The absence of full mobile device support was negatively impacting on

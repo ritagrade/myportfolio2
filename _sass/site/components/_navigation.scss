@@ -13,12 +13,10 @@
 .menu {
     display: grid;
     justify-content: center;
+    align-items: center;
     padding: var(--gutter-small) 0;
 }
 
-.navheader {
-    grid-row: 2;
-}
 
 .current {
     justify-content: center;
@@ -32,6 +30,7 @@
 
 .nav-nav a {
     padding: var(--gutter-xxsmall) var(--gutter-xsmall);
+    grid-row: 2;
 }
 
 
@@ -42,20 +41,13 @@
     .menu {
         display: grid;
         justify-content: space-between;
-        padding: var(--gutter-regular);       
+        align-items: center;
+        padding: var(--gutter-small);       
     }
 
-    .navheader {
-        grid-row: 1;
-        justify-content: center;
-    }
-        
-    .navheader a {
-        justify-content: center;
-    }
-        
+
     .nav-nav {
-        justify-content: center;
+        grid-row: 1;
     }
         
     .logo {

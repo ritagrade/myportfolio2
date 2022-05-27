@@ -12,10 +12,6 @@ client: Butterfly
 time_period: 2017
 thumbnail: "/projects/butterfly/plist-butterfly.jpg"
 
-website:
-  button_text: Visit the site
-  url: https://www.butterfly.life/
-
 intro: |
   Butterfly is a social networking app which aims at connecting skilled
   creatives across any discipline.

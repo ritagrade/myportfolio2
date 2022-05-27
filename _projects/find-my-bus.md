@@ -11,10 +11,6 @@ client:
 time_period: 2014
 thumbnail: "/projects/find-my-bus/plist-find-my-bus.png"
 
-website:
-  button_text: Visit the site
-  url: https://findmybus.uk/
-
 intro: |
   Find My Bus is one of the UK's first live bus tracking apps. The aim is to
   give bus passengers a better idea of when their bus will be at their stop by

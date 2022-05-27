@@ -34,7 +34,7 @@
   --font-size-xxxlarge: 4rem;
   --font-size-404: 10rem;
 
-  --font-size-button: var(--font-size-large);
+  --font-size-button: var(--font-size-xsmall);
   --font-size-form-label: var(--font-size-xlarge);
   --font-size-nav: var(--font-size-xlarge);
 
@@ -89,18 +89,18 @@
   }
 }
 
-@include grid-media(desktop) {
-  :root {
-    --font-size-root: 17px;
-    --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
-    --font-size-body: var(--font-size-xlarge);
-    --font-size-body-large: var(--font-size-xxlarge-2);
-    --font-size-body-huge: var(--font-size-xxxxlarge);
+// @include grid-media(desktop) {
+//   :root {
+//     --font-size-root: 17px;
+//     --font-size-level-jumbo: var(--font-size-xxxxxxlarge);
+//     --font-size-body: var(--font-size-xlarge);
+//     --font-size-body-large: var(--font-size-xxlarge-2);
+//     --font-size-body-huge: var(--font-size-xxxxlarge);
 
-    --gutter: #{rem(32px)};
-    --gutter-row: #{rem(32px)};
-  }
-}
+//     --gutter: #{rem(32px)};
+//     --gutter-row: #{rem(32px)};
+//   }
+// }
 
 
 
@@ -148,15 +148,17 @@ $timing-interaction: .2s;
 
 
 @include grid-media(tablet) {
-  :root {
-    font-size: 0.85rem;
+  .container {
+    max-width: 1140px;
+    margin: auto;
   }
 
 }
 
 @include grid-media(desktop) {
-  :root {
-    font-size: .85rem;
+  .container {
+    max-width: 1320px;
+    margin: auto;
   }
-
 }
+

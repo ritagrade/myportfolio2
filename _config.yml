@@ -26,9 +26,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  fonts:
-    output: true
-    permalink: /fonts/:path/
 
 defaults:
   - scope:
@@ -36,23 +33,8 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  - scope:
-      path: ""
-      type: "fonts"
-    values:
-      layout: "font"
 
 sass:
     sass_dir: _sass
     style: :compressed
 
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge

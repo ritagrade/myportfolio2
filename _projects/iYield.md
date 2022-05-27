@@ -12,9 +12,6 @@ client: iYield
 time_period: 2017
 thumbnail: "/projects/iyield/plist-iyield.jpg"
 
-website:
-  button_text: Visit iYield
-  url: //www.iyield.co/
 
 intro: |
   _iYield_ is a tool for calculating and visualising the estimated returns on

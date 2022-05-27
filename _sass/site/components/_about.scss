@@ -49,16 +49,37 @@
       }
     }
   }
-}
 
-  
+  .about-section {
 
-.about {
-  .about-section-title {
-    padding-bottom: var(--gutter-xsmall);
-    margin-bottom: var(--gutter-xsmall);
+    .about-section-title {
+      padding-bottom: var(--gutter-xsmall);
+      margin-bottom: var(--gutter-xsmall);
+    }
+      
+    .relational-list {
+      
+      .relational-list__title p {
+        margin: var(--gutter-xsmall) 0;
+        font-size: var(--font-size-small);
+      }
+        
+      .relational-list__description p {
+        font-size: var(--font-size-xsmall);
+      }
+
+      .rld-position {
+        margin-bottom: var(--gutter-xsmall);
+      }
+
+    }
+
+
   }
+
 }
+
+
 
   
 

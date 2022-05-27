@@ -12,10 +12,6 @@ client: Knolo
 time_period: 2019 Onwards
 thumbnail: "/projects/iyield/plist-iyield.jpg"
 
-website:
-  button_text: Visit Hero Doctor
-  url: //www.culturemile.london/fusion-prize-shortlist/knolo
-
 intro: |
   A project currently shortlisted for the
   [Culture Mile Fusion prize](https://www.culturemile.london/fusionprize). Knolo

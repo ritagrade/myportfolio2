@@ -38,3 +38,19 @@
 
 
 /*----------------------- Min 1440px --------------------------*/
+
+@include grid-media(desktop) {
+
+  .contactrow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+  
+  .col-lg-8 {
+    grid-column: 1;
+  }
+  
+  .col-lg-4 {
+    grid-column: 3;
+  }
+}

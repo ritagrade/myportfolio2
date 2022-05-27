@@ -12,9 +12,6 @@ client: iYield
 time_period: Late 2017
 thumbnail: "/projects/iyield/plist-iyield.jpg"
 
-website:
-  button_text: Visit Hero Doctor
-  url: //herodoctors.co.uk/styleguide
 
 intro: |
   Hero Doctor is an appointment booking app for a private medical practice.
