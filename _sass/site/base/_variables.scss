@@ -71,12 +71,12 @@
 
 @include grid-media(tablet) {
   :root {
-    --line-height-tight: 3rem;
-    --line-height-slight: 1.45;
+    --line-height-tight: 2rem;
+    --line-height-slight: 1rem;
 
-    --font-size-xsmall: 1.5rem;
-    --font-size-small: 2.5rem;
-    --font-size-normal: 2rem;
+    --font-size-xsmall: 1rem;
+    --font-size-small: 1.5rem;
+    --font-size-normal: 2.5rem;
     --font-size-large: 3rem;
     --font-size-xlarge: 3rem;
     --font-size-xxlarge: 3.2rem;

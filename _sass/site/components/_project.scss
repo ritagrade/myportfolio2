@@ -3,17 +3,124 @@
 
 
 .project-wrapper {
-  padding: var(--gutter-small);
+  padding: var(--gutter-large) var(--gutter-small);
 }
   
 .project-title {
   margin-bottom: var(--gutter-small);
+
+  h3 {
+    font-size: var(--font-size-large);
+  }
+
+}
+
+.project-detail-first {
+  margin-bottom: var(--gutter-small);
 }
   
+.image-wrapper figcaption {
+  text-align: center;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: var(--gutter-regular);
+  margin-bottom: var(--gutter-regular);
+}
+
+
+
 
 /*----------------------- Min 768px --------------------------*/
 
+@include grid-media(tablet) {
+
+
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-column-gap: var(--gutter-large);
+  }
+
+  .project-details {
+    grid-column: 3;
+  }
+  
+
+  .project-info {
+    grid-column: 1;
+    grid-row: 2;  
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: var(--gutter-regular);
+    margin-bottom: 0;
+  
+    .paragraph-normal {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .project-details {
+      grid-column: 1;
+      grid-row: 2;  
+    }
+  
+  }
+  
+
+  .imag-project {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
 
 
 
 /*----------------------- Min 1440px --------------------------*/
+
+@include grid-media(desktop) {
+  .project-info {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: flex-end;
+  }
+  
+  .project-details {
+    grid-column: 3;
+  }
+  
+
+  .project-info {
+    grid-column: 1;
+    grid-row: 2;  
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: var(--gutter-regular);
+    margin-bottom: 0;
+  
+    .paragraph-normal {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .project-details {
+      grid-column: 1;
+      grid-row: 2;  
+    }
+  
+  }
+  
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--gutter-xxlarge);
+
+  }
+  .imag-project {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

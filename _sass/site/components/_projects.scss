@@ -40,19 +40,6 @@
   opacity: 1;
 }
 
-.project-info {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: var(--gutter-regular);
-  margin-bottom: var(--gutter-regular);
-}
-
-.imag-project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: var(--gutter-small);
-  margin-bottom: var(--gutter-xxlarge);
-}
 
 
 /*----------------------- Min 768px --------------------------*/
@@ -81,18 +68,6 @@
   
   .thumbnail-description, .projects h4 {
     display: none;
-  }
-
-  .project-info {
-    grid-template-columns: 2.5fr 1fr;
-    grid-column-gap: var(--gutter-xlarge);
-  }
-  
-  .imag-project {
-    display: flex;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: var(--gutter-regular);
-    grid-column-gap: var(--gutter-regular);
   }
   
 }

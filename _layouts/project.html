@@ -42,9 +42,11 @@ title-class: project
   </div>
 
   <section class="imag-project">
-    {% for entry in page.content_layout %}
-      {% include layout.html %}
-    {% endfor %}
+    <div>
+      {% for entry in page.content_layout %}
+       {% include layout.html %}
+      {% endfor %}
+    </div>
   </section>
 
   {% if page.content %}
