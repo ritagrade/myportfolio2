@@ -38,15 +38,14 @@ footer #icon {
 
 @include grid-media(tablet) {
 
-    footer #icon {
-      display: none;
-    }
+  footer #icon {
+    display: none;
+  }
 
-    footer p {
-      display: block;
-    }
-
-    
+  footer p {
+    display: block;
+    font-size: var(--font-size-small);
+  }
 }
 
 /*----------------------- Min 1440px --------------------------*/
